@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios';
 import Pagination from '@material-ui/lab/Pagination';
 import {makeStyles} from '@material-ui/core/styles'
 import Card from './Card';
 import NotFound from './NotFound'
 import fetched from '../constants/fetched'
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMovie } from '../redux/actions/movieActionCreator';
+import { fetchMovie } from '../redux/sagas/movieSaga';
 
 const Main = () => {
 
@@ -43,6 +42,7 @@ const Main = () => {
                 <Pagination className={classes.pagination} count={data.pagination.total_pages} color='primary' onChange={handleChange}/>
             </div>}
             {error && <NotFound/>}
+            {console.log(data)}
         </div>
     )
 }
