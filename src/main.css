@@ -481,7 +481,7 @@ nav.navbar.bootsnav.navbar-fixed .button-holder {
 #home {
   position: relative;
   padding: 190px 0px 120px 0px;
-  background: url(../img/banner.jpg);
+  background: url(./img/banner.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -545,7 +545,7 @@ nav.navbar.bootsnav.navbar-fixed .button-holder {
   #story .col-md-6 {
     padding: 0; }
   #story .story-bg {
-    background-image: url(../img/success.jpg);
+    background-image: url(./img/success.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
